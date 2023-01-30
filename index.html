@@ -1,34 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
     <head>
-        <title>병신들 소개</title>
+        <title>미래 사진관</title>
         <meta charset="utf-8">
+        <!-- a태그 전체 black으로 바꾸기 -->
+        <!-- .saw = class선택자 전체 gray으로 바꾸기 -->
+        <!-- #active = id선택자 red로 바꾸기 -->
+        <style>
+           @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Pacifico&display=swap');
+            body{
+                margin:0;
+                background-color:beige;
+
+            }
+            
+            #grid ul{
+                font-size: 40px;
+                font-family: 'Nanum Pen Script';
+                margin: 0px;
+                padding: 50px;
+                /*border-right: 2.5px solid gray;*/
+                list-style: none;
+                text-align: center;
+                
+            }
+            a { 
+                background-color: rgb(198, 229, 233);
+                transition: background-color 0.5s;
+                color:black;
+                text-decoration: none;
+                width: 30px;
+                
+                
+            }
+            a:hover{
+                background-color: rgb(133, 113, 217);
+            }
+            #grid li{
+                padding:3px;
+            }
+            /*
+            .saw {
+                color:gray;
+            }
+
+            #active{
+                color:red;
+            }*/
+            h1 {
+                background-color: azure;
+                border-bottom: 2.5px solid gray;
+                margin: 0px;
+                padding:30px;
+                font-size: 60px;
+                font-family:"Pacifico";
+                text-align: center;
+                
+            }
+            h2{
+                /*border-right: 2.5px solid gray;*/
+                font-size: 50px;
+                font-family: 'Nanum Pen Script';
+                margin:0px;
+                padding-left: 10px;
+                text-align: center;
+
+            }
+            /*
+            #grid{
+                display: grid;
+                grid-template-columns: 150px 1fr;
+            }*/
+            @media(max-width:1150px){
+                #grid{
+                display: block; 
+                border-right:none ;
+            }
+            h2{
+                border-right:none;
+            }
+            #grid ul{
+                border-right:none;
+            }
+            h1{
+                border-bottom:none;
+            }
+        
+            }
+        </style>
     </head>
 
 
     <body>
-        <h1>19미래들을 소개합니다</h1>
-
-        <h2>별나라 라인</h2>
-        <ul>
-            <li><a href="김제우.html">김제우</a></li>
-            <li><a href="이상래.html">이상래</a></li>
-            <li><a href="김호진.html">김호진</a></li>
-        </ul>
-        <h2>기생충 라인</h2>
-        <ul>
-            <li><a href="이건상.html">이건상</a></li>
-            <li><a href="이강혁.html">이강혁</a></li>
-            <li>우호식</li>
-            <li><a href="미숫가루.html">미숫가루</a></li>
+        <h1>19 picture studio</h1>
+            <div id="grid">
+                <h2>별나라 라인</h2>
+                <ul>
+                    <li><a href="김제우.html" >김제우</a></li>
+                    <li><a href="이상래.html" >이상래</a></li>
+                    <li><a href="김호진.html">김호진</a></li>
+                </ul>
+                <h2>기생충 라인</h2>
+                <ul>
+                    <li><a href="이건상.html">이건상</a></li>
+                    <li><a href="이강혁.html">이강혁</a></li>
+                    <li><a href="우호식.html">우호식</a></li>
+                    <li><a href="미숫가루.html">미숫가루</a></li>
+                    
+                </ul>
+                <h2>그 외</h2>
+                <ul>
+                    <li><a href="김도훈.html">김도훈</a></li>
+                </ul>
             
-        </ul>
-        <h2>그 외</h2>
-        <ul>
-            <li><a href="김도훈.html">김도훈</a></li>
-        </ul>
+            </div>
 
 
+       
+        
     </body>
 
 </html>
